@@ -1,0 +1,113 @@
+{
+    "env": {
+        "browser": false,
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "globals": {
+
+    },
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "jest"
+    ],
+    "settings": {
+        "react": {
+            "version": "16.0"
+        },
+        "polyfills": [
+            "fetch",
+            "promises",
+            "url",
+            "object-assign"
+        ]
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            0,
+            "error",
+            "window"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "react/display-name": [
+            0
+        ],
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "no-console": "off",
+        "react/jsx-max-props-per-line": [
+            2,
+            {
+                "when": "multiline"
+            }
+        ],
+        "react/jsx-first-prop-new-line": 2,
+        "react/jsx-closing-tag-location": 2,
+        "react/jsx-closing-bracket-location": 2,
+        "react/prop-types": [
+            2,
+            {
+                "ignore": [
+                    "className",
+                    "id",
+                    "style",
+                    "children",
+                    "router",
+                    "history"
+                ]
+            }
+        ],
+        "react/no-unknown-property": [
+            2,
+            {
+                "ignore": [
+                    "onload"
+                ]
+            }
+        ],
+        "react/react-in-jsx-scope": 2,
+        "react/jsx-no-undef": [
+            2,
+            {
+                "allowGlobals": true
+            }
+        ],
+        "react/jsx-curly-spacing": 2
+    }
+}

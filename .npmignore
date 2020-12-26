@@ -1,0 +1,16 @@
+__tests__
+__mocks__
+.version
+
+package-lock.json
+tsconfig.json
+tslint.json
+.idea
+node_modules
+
+.editorconfig
+.eslintignore
+.eslintrc.json
+
+
+certificate/*
